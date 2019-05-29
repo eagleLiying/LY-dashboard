@@ -1,5 +1,7 @@
 @import '../../assets/scss/variables.scss';
 
+$avater-size: 38px;
+
 .header {
   display: flex;
   align-items: center;
@@ -11,4 +13,10 @@
     font-weight: 600;
     font-size: 20px;
   }
+}
+
+.avater {
+  width: $avater-size;
+  height: $avater-size;
+  border-radius: $avater-size;
 }

@@ -3,7 +3,14 @@
     <el-header :class="style.header">
       <h1>生鲜超市管理系统</h1>
       <div>
-        ddsad
+        <el-dropdown>
+          <span class="el-dropdown-link">
+            <img :class="style.avater" src="../../assets/images/avater.jpeg">
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item>登出</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
       </div>
     </el-header>
   </div>
