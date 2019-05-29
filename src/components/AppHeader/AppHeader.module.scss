@@ -1,0 +1,14 @@
+@import '../../assets/scss/variables.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid $border-color;
+
+  & h1 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
