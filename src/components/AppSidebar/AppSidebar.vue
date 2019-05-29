@@ -33,8 +33,13 @@ export default {
   data() {
     return {
       style,
-      isCollapse: false,
+      isCollapse: true,
       menus: [
+        {
+          path: "/",
+          name: "订单",
+          icon: "el-icon-s-order"
+        },
         {
           path: "/foo",
           name: "foo",
@@ -44,7 +49,7 @@ export default {
           path: "/bar",
           name: "bar",
           icon: "el-icon-menu"
-        }
+        },
       ]
     };
   },

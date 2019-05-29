@@ -1,7 +1,7 @@
 
 // 1. 定义 (路由) 组件。
 // 可以从其他文件 import 进来
-// import App from "./App.vue";
+import Orders from "./orders/Orders.vue";
 
 const Bar = { template: "<div>bar</div>" };
 const App = { template: "<div>foo</div>" };
@@ -13,7 +13,8 @@ const App = { template: "<div>foo</div>" };
 // 或者，只是一个组件配置对象。
 const routes = [
   { path: "/foo", component: App },
-  { path: "/bar", component: Bar }
+  { path: "/bar", component: Bar },
+  { path: "/", component: Orders }
 ];
 
 export default routes;
