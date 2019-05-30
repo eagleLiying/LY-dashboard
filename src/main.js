@@ -4,6 +4,8 @@ import App from "./components/App/App.vue";
 
 import "./plugins/element.js";
 import "./plugins/vue-router.js";
+import "./plugins/axios";
+import './plugins/mock';
 
 import routes from "./routes/index";
 

@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   css: {
     modules: true,
@@ -14,7 +16,8 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        'vue$': 'vue/dist/vue.esm.js' 
+        vue$: "vue/dist/vue.esm.js",
+        mock: path.resolve(__dirname, "mock/")
       }
     }
   }

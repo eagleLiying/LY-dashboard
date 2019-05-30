@@ -1,0 +1,19 @@
+{
+  "status": 1,
+  "message": null,
+  "data": {
+    "id": "order-1",
+    "status": 1,
+    "createDate": "2016-05-02",
+    "user": {
+      "id": "111111",
+      "name": "不羁",
+      "address": "上海市普陀区金沙江路 1518 弄"
+    },
+    "deliveryDriver": {
+      "id": "111111-2222",
+      "name": "王小虎",
+      "mobile": "18210228877"
+    }
+  }
+}

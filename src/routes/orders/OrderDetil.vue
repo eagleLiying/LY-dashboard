@@ -1,9 +1,9 @@
 <template>
-  <el-dialog title="详情" :visible.sync="dialogVisible" width="30%" :before-close="handleClose">
-    <span>{{ data.name }}----{{ data.date }}</span>
+  <el-dialog title="详情" :visible.sync="visible" width="30%" :before-close="handleclose">
+    <span>{{ data.createDate }}</span>
     <span slot="footer" class="dialog-footer">
-      <el-button @click="dialogVisible = false">取 消</el-button>
-      <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+      <el-button @click="handleclose">取 消</el-button>
+      <el-button type="primary" @click="handleclose">确 定</el-button>
     </span>
   </el-dialog>
 </template>
@@ -12,9 +12,9 @@
 export default {
   name: "order-detil",
   props: {
-    dialogVisible: Boolean,
-    handleClose: Function,
+    visible: Boolean,
+    handleclose: Function,
     data: Object
-  }
+  },
 };
 </script>

@@ -45,6 +45,11 @@ export default {
           name: "商铺管理",
           icon: "el-icon-s-shop"
         },
+        {
+          path: "/users",
+          name: "用户管理",
+          icon: "el-icon-user-solid"
+        },
       ]
     };
   },

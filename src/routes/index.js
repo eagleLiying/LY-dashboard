@@ -3,6 +3,7 @@
 // 可以从其他文件 import 进来
 import Orders from "./orders/Orders.vue";
 import Shops from "./shops/Shops.vue";
+import Users from "./users/Users.vue";
 
 
 // 2. 定义路由
@@ -10,8 +11,9 @@ import Shops from "./shops/Shops.vue";
 // 通过 Vue.extend() 创建的组件构造器，
 // 或者，只是一个组件配置对象。
 const routes = [
+  { path: "/", component: Orders },
   { path: "/shops", component: Shops },
-  { path: "/", component: Orders }
+  { path: "/users", component: Users },
 ];
 
 export default routes;
