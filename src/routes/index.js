@@ -2,9 +2,7 @@
 // 1. 定义 (路由) 组件。
 // 可以从其他文件 import 进来
 import Orders from "./orders/Orders.vue";
-
-const Bar = { template: "<div>bar</div>" };
-const App = { template: "<div>foo</div>" };
+import Shops from "./shops/Shops.vue";
 
 
 // 2. 定义路由
@@ -12,8 +10,7 @@ const App = { template: "<div>foo</div>" };
 // 通过 Vue.extend() 创建的组件构造器，
 // 或者，只是一个组件配置对象。
 const routes = [
-  { path: "/foo", component: App },
-  { path: "/bar", component: Bar },
+  { path: "/shops", component: Shops },
   { path: "/", component: Orders }
 ];
 

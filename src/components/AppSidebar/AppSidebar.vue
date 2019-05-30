@@ -37,18 +37,13 @@ export default {
       menus: [
         {
           path: "/",
-          name: "订单",
+          name: "订单管理",
           icon: "el-icon-s-order"
         },
         {
-          path: "/foo",
-          name: "foo",
-          icon: "el-icon-menu"
-        },
-        {
-          path: "/bar",
-          name: "bar",
-          icon: "el-icon-menu"
+          path: "/shops",
+          name: "商铺管理",
+          icon: "el-icon-s-shop"
         },
       ]
     };
