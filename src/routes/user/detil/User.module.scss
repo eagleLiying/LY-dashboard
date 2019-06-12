@@ -1,0 +1,38 @@
+.title {
+  font-size: 16px;
+  text-align: left;
+}
+
+.content {
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.filed {
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.filedTitle {
+  width: 120px;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 10px;
+  color: #008080
+}
+
+.filedValue {
+  flex: 1;
+}
+
+.infoItem {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
