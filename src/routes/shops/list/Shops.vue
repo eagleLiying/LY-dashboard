@@ -2,6 +2,7 @@
 <template>
   <div>
     <h2 :class="style.title">商铺管理</h2>
+    <el-button size="medium" type="primary" @click="handleToCreate">新增商铺</el-button>
     <el-table :data="tableData" style="width: 100%" stripe>
       <el-table-column prop="name" label="商铺名称" width="180"></el-table-column>
       <el-table-column prop="date" label="加盟日期" width="180" sortable></el-table-column>
@@ -103,6 +104,9 @@ export default {
     },
     filterStatus(value, row) {
       return row.status === value;
+    },
+    handleToCreate() {
+      this.$router.push("/shops/create");
     }
   }
 };

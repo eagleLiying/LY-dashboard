@@ -8,7 +8,7 @@
             size="mini"
             type="text"
             :class="style.sidebarButton"
-            @click="isCollapse = !isCollapse"
+            @click="handleChangeCollapse"
             :icon="isCollapse ? 'el-icon-caret-right' : 'el-icon-caret-left'"
           ></el-button>
           <div v-show="!isCollapse" :class="style.logoContainer">
@@ -53,6 +53,11 @@ export default {
       ]
     };
   },
-  methods: {}
+  methods: {
+    handleChangeCollapse(e) {
+      e.stopPropagation();
+      this.isCollapse = !this.isCollapse
+    }
+  }
 };
 </script>
