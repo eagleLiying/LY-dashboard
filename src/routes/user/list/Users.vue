@@ -27,7 +27,7 @@ export default {
     };
   },
   beforeCreate() {
-    this.$http.get("/mock/users").then(({ data }) => {
+    this.$http.get("/api/users").then(({ data }) => {
       if (data && data.status) {
         this.tableData = data.data;
       }

@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <page>
     <h2 :class="style.title">订单管理</h2>
     <el-table :data="tableData" style="width: 100%" stripe>
       <el-table-column prop="id" label="订单号" width="180"></el-table-column>
@@ -27,18 +27,20 @@
       v-bind:handleclose="handleClose"
       v-bind:data="currentOrder"
     />
-  </div>
+  </page>
 </template>
 
 <script>
 import OrderDetil from "./OrderDetil";
+import Page from "../../components/Page";
 
 import style from "./Orders.module.scss";
 
 export default {
   name: "orders",
   components: {
-    "order-detil": OrderDetil
+    "order-detil": OrderDetil,
+    "page": Page,
   },
   data() {
     const statusText = {

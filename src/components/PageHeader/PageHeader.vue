@@ -17,10 +17,10 @@
 </template>
 
 <script>
-import style from "./AppHeader.module.scss";
+import style from "./PageHeader.module.scss";
 
 export default {
-  name: "appHeader",
+  name: "pageHeader",
   data() {
     return {
       style

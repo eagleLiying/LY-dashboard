@@ -9,7 +9,7 @@
             type="text"
             :class="style.sidebarButton"
             @click="handleChangeCollapse"
-            :icon="isCollapse ? 'el-icon-caret-right' : 'el-icon-caret-left'"
+            :icon="isCollapse ? 'el-icon-s-unfold' : 'el-icon-s-fold'"
           ></el-button>
           <div v-show="!isCollapse" :class="style.logoContainer">
           <img src="../../assets/logo.png" :class="style.logo" />
@@ -26,10 +26,10 @@
 
 
 <script>
-import style from "./AppSidebar.module.scss";
+import style from "./PageSidebar.module.scss";
 
 export default {
-  name: "app",
+  name: "pageSidebar",
   data() {
     return {
       style,

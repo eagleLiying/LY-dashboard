@@ -31,7 +31,7 @@ const routes = [
   },
   {
     path: "/users",
-    component: () => import(/* webpackChunkName: "user" */ "./user/User.vue"),
+    component: () => import(/* webpackChunkName: "user" */ "./user/index.vue"),
     children: [
       {
         path: "",
